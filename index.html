@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prosopis-6 | Muestra de brazo robótico</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  
+  <nav class="barra-top">
+    <span class="marca">Prosopis-6</span>
+    <span class="escena-actual" id="escenaActual">Portada</span>
+  </nav>
+  <div class="progreso" aria-hidden="true"><i id="barra"></i></div>
+
+  
+
+  
+  <header id="inicio" class="hero escena" data-escena data-nombre="Portada" data-dwell="10">
+    <img class="hero-img" src="images/hero.jpg" alt="Brazo robótico negro con pinza" data-rotulo="Imagen de portada">
+    <div class="hero-shade"></div>
+    <div class="container hero-content">
+      <p class="etiqueta">Prosopis-6 · Brazo robótico de 6 ejes</p>
+      <h1 class="hero-title">Un brazo que piensa<br>en milésimas.</h1>
+      <p class="hero-sub">Mueve, ensambla y repite con precisión submilimétrica.</p>
+    </div>
+  </header>
+
+  <main>
+    
+    <section id="precision" class="block escena" data-escena data-nombre="Precisión" data-dwell="12">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7 reveal from-left">
+            <div class="frame">
+              <video class="auto-video" src="videos/demo1.mp4" muted loop playsinline preload="metadata" data-rotulo="Video de precisión"></video>
+              <span class="corner tl"></span><span class="corner br"></span>
+            </div>
+          </div>
+          <div class="col-lg-5 reveal from-right">
+            <h2>Cada giro, calculado.</h2>
+            <p>Seis articulaciones coordinadas por un controlador que corrige su posición mil veces por segundo. El resultado: movimientos suaves que se repiten igual, la primera vez y la diez mil.</p>
+            <p class="muted">Programable por trayectorias o por aprendizaje manual.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="specs" class="block block-alt escena" data-escena data-nombre="Especificaciones" data-dwell="9">
+      <div class="container">
+        <h2 class="reveal text-center mb-5">Especificaciones</h2>
+        <div class="row g-4 text-center">
+          <div class="col-6 col-lg-3 reveal">
+            <div class="spec"><div class="spec-num"><span class="count" data-to="6">0</span></div><div class="spec-label">grados de libertad</div></div>
+          </div>
+          <div class="col-6 col-lg-3 reveal">
+            <div class="spec"><div class="spec-num"><span class="count" data-to="850">0</span><small>mm</small></div><div class="spec-label">alcance máximo</div></div>
+          </div>
+          <div class="col-6 col-lg-3 reveal">
+            <div class="spec"><div class="spec-num"><span class="count" data-to="5">0</span><small>kg</small></div><div class="spec-label">carga útil</div></div>
+          </div>
+          <div class="col-6 col-lg-3 reveal">
+            <div class="spec"><div class="spec-num">±<span class="count" data-to="0.05" data-dec="2">0</span><small>mm</small></div><div class="spec-label">repetibilidad</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="puente escena" data-escena data-nombre="Ya está entre nosotros" data-dwell="7">
+      <div class="container text-center">
+        <p class="etiqueta reveal">Y esto no es ciencia ficción</p>
+        <h2 class="puente-titulo reveal">Esta tecnología ya trabaja<br>en todo el mundo.</h2>
+        <div class="chips reveal">
+          <span>Automotriz</span><span>Medicina</span><span>Logística</span><span>Electrónica</span><span>Espacio</span>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="sector block block-alt escena" data-escena data-nombre="Carpintería" data-dwell="16">
+      <div class="container">
+        <div class="row align-items-center g-5 flex-lg-row-reverse">
+          <div class="col-lg-4 reveal from-right">
+            <span class="etiqueta">01 · Carpintería</span>
+            <h2>Lijar, fresar, repetir.</h2>
+            <p>En la industria de la madera, los brazos robóticos lijan, pulen y fresan piezas con una presión constante que cuesta sostener a mano durante horas, y sin respirar el polvo. Así se trabajan hoy sillas, mesas y tableros, una tarea que reconoce cualquier mueblería, como las que trabajan el algarrobo en nuestra zona. Por eso nuestro brazo lleva su nombre científico: Prosopis.</p>
+            <ul class="datos"><li>Lijado</li><li>Fresado</li><li>Pulido</li></ul>
+          </div>
+          <div class="col-lg-8 reveal from-left">
+            <div class="duo">
+              <div class="short"><video class="auto-video" src="videos/shorts/madera.mp4" muted loop playsinline preload="auto" data-rotulo="Short: madera"></video></div>
+              <figure class="foto"><img src="images/madera.jpg" style="object-position:55% 50%" alt="Brazo robótico fresando un tablero de madera" data-rotulo="Brazo fresando madera"></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="sector block escena" data-escena data-nombre="Automotriz" data-dwell="13">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-4 reveal from-left">
+            <span class="etiqueta">02 · Industria automotriz</span>
+            <h2>Una línea de montaje que nunca para.</h2>
+            <p>Desde 1961, cuando un brazo Unimate empezó a trabajar en una planta de General Motors, la industria automotriz es una de las que más robots usa: sueldan, pintan y ensamblan carrocerías con la misma precisión en el auto número uno y en el diez mil.</p>
+            <ul class="datos"><li>Soldadura</li><li>Pintura</li><li>Ensamble</li></ul>
+          </div>
+          <div class="col-lg-8 reveal from-right">
+            <div class="duo">
+              <figure class="foto"><img src="images/automotriz.jpg" style="object-position:50% 50%" alt="Brazos robóticos en una línea de producción de autos" data-rotulo="Línea de producción automotriz"></figure>
+              <div class="short"><video class="auto-video" src="videos/shorts/automotriz.mp4" muted loop playsinline preload="metadata" data-rotulo="Short: automotriz"></video></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="sector block block-alt escena" data-escena data-nombre="Medicina" data-dwell="13">
+      <div class="container">
+        <div class="row align-items-center g-5 flex-lg-row-reverse">
+          <div class="col-lg-4 reveal from-right">
+            <span class="etiqueta">03 · Medicina</span>
+            <h2>Del quirófano al laboratorio.</h2>
+            <p>El sistema quirúrgico da Vinci es el ejemplo más conocido: el cirujano maneja desde una consola brazos que sostienen los instrumentos y la cámara, y opera con incisiones mínimas. En los laboratorios, otros brazos manipulan tubos y pipetas con una precisión que se repite igual en cada muestra.</p>
+            <ul class="datos"><li>Cirugía con sistema da Vinci</li><li>Incisiones mínimas</li><li>Automatización de laboratorio</li></ul>
+          </div>
+          <div class="col-lg-8 reveal from-left">
+            <div class="duo">
+              <div class="short"><video class="auto-video" src="videos/shorts/medicina.mp4" muted loop playsinline preload="metadata" data-rotulo="Short: medicina"></video></div>
+              <figure class="foto alterna">
+                <img src="images/davinci.jpg" alt="Sistema quirúrgico da Vinci sobre una camilla" data-rotulo="Sistema da Vinci" style="object-position:50% 40%">
+                <img src="images/medicina.jpg" alt="Brazo robótico de laboratorio con pipeta" data-rotulo="Brazo en laboratorio" style="object-position:68% 50%">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="sector block escena" data-escena data-nombre="Logística" data-dwell="13">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-4 reveal from-left">
+            <span class="etiqueta">04 · Logística</span>
+            <h2>Cajas que se mueven solas.</h2>
+            <p>En los centros de distribución, los brazos clasifican, apilan y paletizan paquetes durante todo el día, y trabajan junto con robots móviles que llevan la mercadería de un lado a otro.</p>
+            <ul class="datos"><li>Clasificación</li><li>Paletizado</li><li>Picking</li></ul>
+          </div>
+          <div class="col-lg-8 reveal from-right">
+            <div class="duo">
+              <figure class="foto"><img src="images/logistica.jpg" style="object-position:22% 50%" alt="Brazo robótico apilando cajas en un depósito" data-rotulo="Depósito y paletizado"></figure>
+              <div class="short"><video class="auto-video" src="videos/shorts/logistica.mp4" muted loop playsinline preload="metadata" data-rotulo="Short: logística"></video></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="sector block block-alt escena" data-escena data-nombre="Electrónica" data-dwell="13">
+      <div class="container">
+        <div class="row align-items-center g-5 flex-lg-row-reverse">
+          <div class="col-lg-4 reveal from-right">
+            <span class="etiqueta">05 · Electrónica</span>
+            <h2>Piezas del tamaño de un grano.</h2>
+            <p>Los celulares y las computadoras se arman con brazos que colocan componentes diminutos y atornillan con una precisión que una mano no sostiene durante horas.</p>
+            <ul class="datos"><li>Montaje de placas</li><li>Atornillado</li><li>Inspección</li></ul>
+          </div>
+          <div class="col-lg-8 reveal from-left">
+            <div class="duo">
+              <div class="short"><video class="auto-video" src="videos/shorts/electronica.mp4" muted loop playsinline preload="metadata" data-rotulo="Short: electrónica"></video></div>
+              <figure class="foto"><img src="images/electronica.jpg" style="object-position:55% 50%" alt="Brazo robótico armando una placa electrónica" data-rotulo="Montaje de electrónica"></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="sector block escena" data-escena data-nombre="Espacio" data-dwell="13">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-4 reveal from-left">
+            <span class="etiqueta">06 · Espacio</span>
+            <h2>Un brazo a 400 km de altura.</h2>
+            <p>El Canadarm2 de la Estación Espacial Internacional captura naves de carga, mueve módulos y asiste a los astronautas en sus caminatas espaciales.</p>
+            <ul class="datos"><li>Captura de naves</li><li>Mantenimiento</li><li>Asistencia a astronautas</li></ul>
+          </div>
+          <div class="col-lg-8 reveal from-right">
+            <div class="duo">
+              <figure class="foto"><img src="images/espacio.jpg" style="object-position:38% 50%" alt="Brazo robótico de la Estación Espacial Internacional" data-rotulo="Brazo en la estación espacial"></figure>
+              <div class="short"><video class="auto-video" src="videos/shorts/espacio.mp4" muted loop playsinline preload="metadata" data-rotulo="Short: espacio"></video></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="galeria" class="block block-alt galeria escena" data-escena data-nombre="Nuestro brazo" data-dwell="10">
+      <div class="container">
+        <h2 class="reveal mb-5">Y este es el nuestro</h2>
+        <div class="row g-4">
+          <div class="col-md-4 reveal from-left">
+            <figure class="shot"><img src="images/foto1.jpg" alt="Vista frontal del brazo robótico" data-rotulo="Foto 1 del brazo"><figcaption>La base y el primer eje</figcaption></figure>
+          </div>
+          <div class="col-md-4 reveal">
+            <figure class="shot"><img src="images/foto2.jpg" alt="Detalle de las articulaciones" data-rotulo="Foto 2 del brazo"><figcaption>Articulaciones con motores paso a paso</figcaption></figure>
+          </div>
+          <div class="col-md-4 reveal from-right">
+            <figure class="shot"><img src="images/foto3.jpg" alt="Pinza del brazo sujetando una pieza" data-rotulo="Foto 3 del brazo"><figcaption>La pinza, lista para tomar piezas</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="accion" class="fullvideo escena" data-escena data-nombre="En acción" data-dwell="14">
+      <video class="auto-video" src="videos/demo2.mp4" muted loop playsinline preload="metadata"></video>
+      <div class="hero-shade"></div>
+      <div class="container reveal">
+        <h2>Mirá cómo trabaja.</h2>
+        <p>Tomar, girar, soltar. Sin pausas, sin cansancio.</p>
+      </div>
+    </section>
+
+    
+    <section class="cierre escena" data-escena data-nombre="Cierre" data-dwell="8">
+      <div class="container text-center">
+        <h2 class="puente-titulo reveal">Gracias.</h2>
+        <p class="reveal mx-auto muted">Prosopis-6 · Muestra de brazo robótico</p>
+      </div>
+    </section>
+  </main>
+
+  
+  <aside class="hud" aria-hidden="true">
+    <svg viewBox="0 0 140 190" width="100%">
+      <rect x="35" y="172" width="50" height="8" rx="2" class="hud-base"/>
+      <g id="j1" transform="translate(60,172)">
+        <line x1="0" y1="0" x2="0" y2="-60" class="hud-link"/>
+        <circle r="5" class="hud-joint"/>
+        <g id="j2" transform="translate(0,-60)">
+          <line x1="0" y1="0" x2="0" y2="-48" class="hud-link"/>
+          <circle r="5" class="hud-joint"/>
+          <g id="j3" transform="translate(0,-48)">
+            <circle r="4" class="hud-joint"/>
+            <path d="M-9 -2 L-9 -16 M9 -2 L9 -16" class="hud-link"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+    <div class="hud-read">J1 <b id="r1">0°</b> J2 <b id="r2">0°</b> J3 <b id="r3">0°</b></div>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
